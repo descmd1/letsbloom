@@ -1,0 +1,235 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Notification Bar */
+.notification-bar {
+    background-color: #5a2dab;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-family: proxima-nova, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.navitems {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: proxima-nova, sans-serif;
+    max-width: 1920px !important;
+    padding: 0px 50px;
+    justify-content: space-between;
+    font-family: proxima-nova, sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    font-family: proxima-nova, sans-serif;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+.logo-icon img{
+    width: 44px;
+    height: 44px;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.sign-in {
+    background-color: transparent;
+    color: #5a2dab;
+    border: 1px solid #5a2dab !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sign-in:hover {
+    background-color: #5a2dab;
+    color: white;
+    border: 1px solid #5a2dab;
+    border-radius: 5px;
+}
+.get-started {
+    background-color: #5a2dab;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.get-started:hover {
+    background-color: white;
+    color: #5a2dab;
+    border: 1px solid #5a2dab;
+}
+/* Sitemap Section */
+.sitemap {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    font-family: proxima-nova, sans-serif;
+    max-width: 1920px !important;
+    padding: 0px 50px; 
+}
+.sitemap h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #2e2e2e;
+    font-family: proxima-nova, sans-serif;
+}
+
+.sitemap ul {
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+}
+
+.sitemap ul li {
+    margin: 10px 0;
+}
+
+.sitemap ul li a {
+    color: #1877f2;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+/* Styles for the nested list */
+.sitemap ul .nested-list {
+    margin-left: 20px;
+    list-style-type: circle; 
+}
+
+.sitemap ul .nested-list li {
+    margin: 5px 0;
+}
+
+.sitemap ul .nested-list li a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.cookie-banner p {
+    flex: 1;
+    color: #2e2e2e;
+}
+
+.cookie-banner a {
+    color: #5a2dab;
+}
+
+.cookie-settings, .accept-all {
+    border: 1px solid #5a2dab;
+    background-color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #5a2dab;
+}
+
+.accept-all {
+    background-color: #5a2dab;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
