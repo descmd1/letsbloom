@@ -208,6 +208,11 @@
 }
 
 @media (max-width: 768px) {
+    .navitems{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
     .nav-links {
         display: none;
         position: absolute;
@@ -231,5 +236,15 @@
 
     .nav-links.active {
         display: flex;
+    }
+
+
+    .cookie-banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cookie-settings, .accept-all{
+        width: 100%;
     }
 }
